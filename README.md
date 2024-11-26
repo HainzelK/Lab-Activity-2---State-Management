@@ -1,0 +1,2 @@
+### Pembahasan App State Management 
+Ephemeral State dibatasi pada satu widget dan akan direset kalau  ada widget rebuild . Sementara itu Scoped Model bisa diakses di banyak widget dan tidak akan direset statenya. Jadi jika modelnya diupdate, akan direbuild semua childrennya. Karena scoped model tetap menyimpan statenya, di autentikasi user dan shopping cart, akan lebih mudah untuk menyimpan datanya karena sudah otomatis. Scoped model juga memisahkan state logicnya dengan UInya sehingga lebih mudah diatur jika ingin diubah.
